@@ -36,3 +36,5 @@ fi
 source ~/.bashrc  # reload bashrc to get go on path
 cd ~/Development/cwn
 make devtools-install
+
+gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "[]" # disable Alt+F1
