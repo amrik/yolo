@@ -2,12 +2,12 @@
 mkdir -p ~/Development
 
 LIBDIR=~/lib
-APPENGINESDK=go_appengine_sdk_linux_amd64-1.9.40.zip
+APPENGINESDK=go_appengine_sdk_linux_amd64-1.9.48.zip
 
 sudo apt install -y curl git bash-completion emacs-nox silversearcher-ag tmux google-chrome-stable htop nodejs-legacy npm
 mkdir -p $LIBDIR
 pushd $LIBDIR
-curl https://storage.googleapis.com/golang/go1.6.3.linux-amd64.tar.gz | tar xvz
+curl https://storage.googleapis.com/golang/go1.7.linux-amd64.tar.gz | tar xvz
 wget https://storage.googleapis.com/appengine-sdks/featured/$APPENGINESDK
 unzip -o $APPENGINESDK
 rm $APPENGINESDK
